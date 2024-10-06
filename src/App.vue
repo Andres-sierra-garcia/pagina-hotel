@@ -1,29 +1,22 @@
 <template>
-  <q-layout view="hHh lpR fFf">
+<header>
+  <q-toolbar>
+    <div class="logoTitle">
+      <img src="./assets/icon.jpg" alt="">
+      <h1>Villa Emily</h1>
+    </div>
+    <div class="navButtons">
+      <q-btn icon="login" to="/">iniciar Sesion</q-btn>
+      <q-btn icon="home" to="/inicio">Inicio</q-btn>
+    <q-btn icon="bed" to="/habitaciones">Habitaciones</q-btn>
+    <q-btn icon="room_service" to="/servicios">Servicios</q-btn>
+    <q-btn icon="sports" to="/deportes">Deportes</q-btn>
+    <q-btn icon="phone" to="/contactos">Contactos</q-btn>
+    </div>
+  </q-toolbar>
+</header>
 
-    <q-header elevated class="bg-primary text-white">
-      <q-toolbar>
-        <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
-
-        <q-toolbar-title>
-          <q-tabs v-model="tab" indicator-color="yellow" class="bg-primary text-white shadow-2">
-            <q-route-tab to="/" name="home" icon="home" label="Inicio" />
-            <q-route-tab to="/home" name="home" icon="home" label="casa" />
-            <q-route-tab to="/habitaciones" name="habitaciones" icon="bed" label="habitaciones" />
-            </q-tabs>
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" side="left" behavior="mobile" bordered>
-      <!-- drawer content -->
-    </q-drawer>
-
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-
-  </q-layout>
+  <router-view/>
 </template>
 
 
@@ -32,17 +25,5 @@
 
 import { ref } from 'vue'
 
-export default {
-  setup() {
-    const leftDrawerOpen = ref(false)
-
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-}
 
 </script>
