@@ -126,10 +126,9 @@
             <div class="divInformation">
                 <div class="main">
                     <h3 class="titleInformation">principal</h3>
-                    <p>Inicio</p>
-                    <p>ofertas</p>
-                    <p>blog</p>
-                    <p>Noticias y eventos</p>
+                    <router-link to="/habitaciones" >habitaciones</router-link>
+                    <router-link to="/deportes" >deportes</router-link>
+                    <router-link to="/servicios" >servicios</router-link>
                 </div>
 
                 <div class="about">
@@ -147,14 +146,22 @@
                     <p></p>
                 </div>
 
-
             </div>
+
+            <div class="iconos">
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-facebook"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-instagram"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-twitter"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-youtube"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-whatsapp"></q-btn>
+            </div>
+
 
         </footer>
 
 
     </main>
 </template>
-<script> 
+<script>
 </script>
 <style src="../styles/home.css"></style>
