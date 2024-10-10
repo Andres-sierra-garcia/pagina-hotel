@@ -8,8 +8,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 
 const routes =[
-    {path:'/home', component:home},
-    {path: '/', component:login},
+    {path:'/', component:home},
+    {path: '/login', component:login},
     {path:'/habitaciones', component:habitaciones},
     {path:'/servicios', component:servicios},
     {path:'/deportes', component:deportes},

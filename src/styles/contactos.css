@@ -1,0 +1,52 @@
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 80% !important;
+    border-radius: 5px;
+    width: fit-content;
+    border-radius: 10px;
+    background-image: url(../assets/card_contactos_image.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.info{
+    margin-left: 10%;
+}
+
+.map{
+    margin-right: 2%;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }   
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#app{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+

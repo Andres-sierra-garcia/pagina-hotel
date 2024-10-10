@@ -1,0 +1,331 @@
+header {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+* {
+    margin: 0%;
+}
+
+.q-toolbar {
+    display: flex !important;
+    flex-direction: row !important;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.logoTitle {
+    display: flex;
+    gap: 10px;
+}
+
+.logoTitle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 4rem !important;
+    font-family: "Lobster", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.containerWelcome {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeSection {
+    display: flex;
+    width: fit-content;
+    border-radius: 10px;
+    margin: 2%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.welcomeSection p {
+    width: 600px;
+    font-family: "Lobster", sans-serif;
+    font-size: 17px;
+}
+
+.welcomeImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 300px;
+    border-radius: 5px;
+    width: 300px;
+    background-image: url(./assets/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: backgroundTransition 6s infinite;
+}
+
+@keyframes backgroundTransition {
+    0% {
+        background-image: url(../assets/image1.jpg);
+    }
+
+    25% {
+        background-image: url(../assets/image2.jpg);
+    }
+
+    50% {
+        background-image: url(../assets/image3.jpg);
+    }
+
+    75% {
+        background-image: url(../assets/image4.jpg);
+    }
+
+    100% {
+        background-image: url(../assets/image1.jpg);
+    }
+}
+
+#priceBanner {
+    width: auto;
+    display: inline-block;
+    font-size: 2em;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.History {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historyTitle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 0;
+}
+
+.historyTitle hr {
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    border: 0px;
+}
+
+.historyTitle h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    white-space: nowrap;
+    font-size: xxx-large;
+}
+
+.containerHistory {
+    border-radius: 10px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: serif;
+    line-height: 1.5;
+}
+
+.partOne,
+.partTwo,
+.partThree {
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    gap: 10px;
+}
+
+.partOne img,
+.partTwo img,
+.partThree img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.servicesTitle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border: 0;
+}
+
+.servicesTitle hr {
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    border: 0px;
+}
+
+.servicesTitle h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    white-space: nowrap;
+    font-size: xxx-large;
+}
+
+.servicesCards {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cardRooms,
+.cardExtremeSports,
+.cardService {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 5px;
+    border: 3px solid white;
+}
+
+.cardRooms p,
+.cardExtremeSports p,
+.cardService p {
+    font-size: 17px;
+    width: 260px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    color: white;
+    margin: 0%;
+}
+
+.cardRooms img,
+.cardExtremeSports img,
+.cardService img {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.btnRooms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 200px;
+    border-radius: 5px;
+    width: 200px;
+    background-image: url(../assets/card_habitaciones_image.jpg);
+    background-size: cover;
+}
+
+.btnSports {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 200px;
+    border-radius: 5px;
+    width: 200px;
+    background-image: url(../assets/card_deportes_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.btnService {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 200px;
+    border-radius: 5px;
+    width: 200px;
+    background-image: url(../assets/card_services_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    display: flex !important;
+    flex-direction: column;
+    background-color: #1e1e1f;
+}
+
+.footerTitle {
+    display: flex;
+    width: 100%;
+    color: white;
+    align-items: center;
+    border: 0;
+}
+
+.footerTitle hr {
+    height: 3px;
+    background-color: white;
+    width: 100%;
+    border: 0px;
+}
+
+.footerTitle h2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    white-space: nowrap;
+    font-size: xxx-large;
+}
+
+.divInformation {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.main,
+.about,
+.recordingServices,
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+.main p,
+.about p,
+.recordingServices p,
+.contact p {
+    margin: 1%;
+    white-space: nowrap;
+    font-size: 18px;
+}
