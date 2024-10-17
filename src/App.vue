@@ -22,6 +22,14 @@
   </div>
 </template>
 
+<script>
+
+function reloadPage(){
+  location.reload();
+}
+
+</script>
+
 
 
 

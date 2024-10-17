@@ -195,3 +195,32 @@ button {
     color: lightblue;
     transform: translateY(-30px);
   }
+
+
+  @media(max-width:860px){
+
+    .containerLogin{
+    background-image: url(../assets/imageLogin.jpg) !important;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-size: cover;
+      align-items: center;
+    justify-content: center;   
+    }
+    .image{
+      display: none;
+    }
+
+    .form{
+      width: 100%;
+    }
+
+    .button{
+      min-width: 200px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 10px;
+    }
+
+  }
