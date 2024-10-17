@@ -13,6 +13,7 @@
     background-position: center;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+    gap: 10px;
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -48,5 +49,30 @@
     overflow-y: scroll;
 }
 
+.redes{
+    display: flex;
+    gap: 5px;
+}
 
+
+.redes .q-btn{
+    width: 50px !important; 
+    margin-top: 5% ;
+    border: 2px solid white;
+
+}
+
+.info h3{
+    font-size: 35px;
+    color: black;
+}
+
+.info p{
+    font-size: 17px;
+    color: black;
+}
+
+#mapDiv > div > div.gm-style > div:nth-child(1){
+    width: 60% !important;
+}
 

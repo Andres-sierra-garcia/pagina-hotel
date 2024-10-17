@@ -1,5 +1,5 @@
 .q-pa-md{
-    width: 50%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,6 +20,8 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
     padding: 10px;
 }
 
@@ -85,4 +87,44 @@
 
 footer{
     width: 100%;
+}
+
+
+
+@media (max-width:850px){
+
+  .containerWelcome{
+    gap: 0px;
+    flex-direction: column;
+  }
+
+} 
+
+@media (max-width: 690px){
+    h1{
+        font-size: 1.5rem !important;
+    }
+
+    .containerWelcome p{
+        font-size: 1.2rem;
+    }
+
+    .q-carousel{
+        height: 250px;
+    }
+}
+
+@media (max-width: 520px){
+    h1{
+        font-size: 1.2rem !important;
+    }
+
+    .containerWelcome p{
+        font-size: 1rem;
+    }
+
+    .q-carousel{
+        height: 200px;
+    }
+
 }

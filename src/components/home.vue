@@ -164,4 +164,4 @@
 </template>
 <script>
 </script>
-<style src="../styles/home.css"></style>
+<style src="../styles/home.css" ></style>   

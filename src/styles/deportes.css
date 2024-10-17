@@ -64,7 +64,10 @@ p{
 }
 
 .cardSports img{
-     
+    .footerTitle h2{
+        font-size: xx-large;
+    }
+
     width: 90%;
     height: 50%;
     border-radius: 10px;
@@ -72,4 +75,50 @@ p{
 
 footer{
     width: 100%;
+}
+
+.main,
+.about,
+.recordingServices {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+
+
+.divInformation p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    text-align: start;
+}
+
+
+@media(max-width:850px){
+
+    .footerTitle h2{
+        font-size: xx-large;
+    }
+}
+
+
+@media(max-width:660px){
+
+    h1{
+        font-size: 1.6rem !important;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+
+    .main,
+.about,
+.recordingServices {
+  
+    width: 290px;
+    height: 200px;    
+}
 }

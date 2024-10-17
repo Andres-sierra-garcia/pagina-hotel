@@ -76,7 +76,13 @@
 
             </div>
 
-
+            <div class="iconos">
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-facebook"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-instagram"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-twitter"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-youtube"></q-btn>
+                <q-btn :style="{ backgroundColor: '#d4c19c' }" icon="fab fa-whatsapp"></q-btn>
+            </div>
   </footer>
 </template>
 
