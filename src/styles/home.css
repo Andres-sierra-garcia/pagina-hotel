@@ -205,7 +205,9 @@ h1 {
 
 .servicesCards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
